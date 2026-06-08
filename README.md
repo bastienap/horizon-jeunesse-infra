@@ -1,6 +1,6 @@
 # Horizon Jeunesse - Infrastructure IT
 
-## 🏢 Présentation du Projet
+## Présentation du Projet
 Ce dépôt documente la restructuration informatique de l'association "Horizon Jeunesse". L'objectif était de transformer un parc informatique "artisanal" (postes isolés, risques de sécurité) en une infrastructure centralisée, sécurisée et évolutive.
 
 Organisation : Association "Horizon Jeunesse" (aide à la réinsertion professionnelle de jeunes et suivi de mineurs).
@@ -15,17 +15,17 @@ Effectif : 15 salariés permanents + bénévoles réguliers.
 
 Opportunité : Récupération d'un serveur physique (don).
 
-### 🎯 Objectifs
+### Objectifs
 - **Centralisation :** Déploiement d'un contrôleur de domaine (Active Directory).
 - **Sécurisation :** Rétrogradation des privilèges locaux et durcissement des accès.
 - **Automatisation :** Gestion des utilisateurs et des permissions via PowerShell.
 
-### 🏗️ Architecture Technique
+### Architecture Technique
 - **Serveur :** Windows Server 2025 (`SRV-DC01`)
 - **Domaine :** `horizon.local`
 - **Clients :** Windows 11 Pro
 
-## 🚀 Étapes de Déploiement
+## Étapes de Déploiement
 
 ### 1. Déploiement du Cœur de l'Infrastructure
 - **Serveur cible** : SRV-DC01 (Windows Server 2025 Standard - Expérience de bureau).
@@ -58,7 +58,7 @@ Opportunité : Récupération d'un serveur physique (don).
   - **OU_Benevoles** : 5 utilisateurs
 - Mise en place de la **Délégation de contrôle** pour permettre aux responsables de département de gérer les mots de passe de leurs collaborateurs sans privilèges d'administrateur domaine.
 
-## 🛠️ Outils utilisés
+## Outils utilisés
 - **Windows Server 2025** (AD DS, DNS)
 - **PowerShell** (Automatisation des tâches d'administration)
 - **VirtualBox** (Virtualisation de l'environnement)
